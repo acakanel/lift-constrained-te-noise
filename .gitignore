@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+paper_AST/
+figs/
+*.o
+*.elf
+*.map
+pil/host_test
+pil/sim_target
+.DS_Store

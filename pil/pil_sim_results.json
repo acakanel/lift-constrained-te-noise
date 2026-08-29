@@ -1,0 +1,139 @@
+{
+  "target": {
+    "magic": 1279873024,
+    "gp_n": 375,
+    "sp_nu": 25,
+    "sp_ncl": 41,
+    "clk": 0,
+    "icache": false,
+    "dcache": false,
+    "float_bytes": 4,
+    "optimisation": "-O1/-O2/-O3",
+    "gcc_major": 13,
+    "optimised": true
+  },
+  "bench": {
+    "n": 400,
+    "clk": 0,
+    "inner": [
+      0,
+      0,
+      0
+    ],
+    "outer": [
+      0,
+      0,
+      0
+    ],
+    "gp": [
+      0,
+      0,
+      0
+    ],
+    "sigma": [
+      0,
+      0,
+      0
+    ],
+    "map_mean": 0,
+    "cache": 0
+  },
+  "fidelity": {
+    "scenario0": {
+      "max_du_deg": 0.017201192751638672,
+      "final_du_deg": 0.006907952011835139,
+      "max_ds": 0.0018433590135333855,
+      "band_pct": 2.304198766916732
+    },
+    "scenario1": {
+      "max_du_deg": 0.01740244326736695,
+      "final_du_deg": 0.001461165867068015,
+      "max_ds": 0.0019232863132161437,
+      "band_pct": 2.4041078915201797
+    }
+  },
+  "closed_loop": {
+    "loud_start": [
+      9.0,
+      10.0,
+      -8.0
+    ],
+    "loud_level": 81.2936678322569,
+    "settled_objective": 73.53574378648688,
+    "descent_dB": 7.757924045770025,
+    "settled_lift_band": 0.01377277655016007,
+    "max_trajectory_deviation_deg": 0.00011994149265870391
+  },
+  "monte_carlo": {
+    "n": 20,
+    "descent_mean": 7.738682252361542,
+    "descent_min": 7.6951742902183184,
+    "descent_max": 7.768783791353542,
+    "band_mean": 0.013392581671236147,
+    "band_max": 0.01713248235520526,
+    "inside_band": 20
+  },
+  "faults": [
+    {
+      "kind": "non-finite lift measurement",
+      "flags": 17,
+      "flag_names": "POS_SAT|NONFINITE",
+      "settled_s": 0.0006918907165527344,
+      "bounded": true,
+      "u": [
+        2.095750331878662,
+        10.0,
+        10.0
+      ]
+    },
+    {
+      "kind": "non-finite speed",
+      "flags": 16,
+      "flag_names": "NONFINITE",
+      "settled_s": 0.009048223495483398,
+      "bounded": true,
+      "u": [
+        2.0,
+        10.0,
+        10.0
+      ]
+    },
+    {
+      "kind": "operating point off the map",
+      "flags": 15,
+      "flag_names": "POS_SAT|RATE_SAT|SP_CLAMP|LOW_CONF",
+      "settled_s": 0.6925060749053955,
+      "bounded": true,
+      "u": [
+        12.0,
+        10.0,
+        10.0
+      ]
+    },
+    {
+      "kind": "lift demand beyond authority",
+      "flags": 3,
+      "flag_names": "POS_SAT|RATE_SAT",
+      "settled_s": 0.0011952519416809082,
+      "bounded": true,
+      "u": [
+        0.07808845490217209,
+        8.53895378112793,
+        -1.3099534511566162
+      ]
+    },
+    {
+      "kind": "surface frozen at its limit",
+      "flags": 1,
+      "flag_names": "POS_SAT",
+      "settled_s": 0.0005646944046020508,
+      "bounded": true,
+      "u": [
+        2.094848394393921,
+        10.0,
+        9.999764442443848
+      ]
+    }
+  ],
+  "link_retries": 0
+}

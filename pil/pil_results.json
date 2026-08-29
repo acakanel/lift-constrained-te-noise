@@ -1,0 +1,147 @@
+{
+  "target": {
+    "magic": 1279873024,
+    "gp_n": 375,
+    "sp_nu": 41,
+    "sp_ncl": 81,
+    "clk": 216000000,
+    "icache": true,
+    "dcache": true,
+    "float_bytes": 4,
+    "optimisation": "-O1/-O2/-O3",
+    "gcc_major": 14,
+    "optimised": true
+  },
+  "bench": {
+    "n": 400,
+    "clk": 216000000,
+    "inner": [
+      78077,
+      78150,
+      79198
+    ],
+    "outer": [
+      760254,
+      761220,
+      762891
+    ],
+    "gp": [
+      79364,
+      80398,
+      80950
+    ],
+    "sigma": [
+      677548,
+      678789,
+      679806
+    ],
+    "map_mean": 1122,
+    "cache": 3
+  },
+  "fidelity": {
+    "scenario0": {
+      "max_du_deg": 0.018216757871490685,
+      "final_du_deg": 0.00642071869554961,
+      "max_ds": 0.0024853292465807364,
+      "band_pct": 2.0711077054839473
+    },
+    "scenario1": {
+      "max_du_deg": 0.3629593346780986,
+      "final_du_deg": 0.0005702602124566525,
+      "max_ds": 0.0011935459665759485,
+      "band_pct": 0.9946216388132905
+    }
+  },
+  "closed_loop": {
+    "loud_start": [
+      9.0,
+      8.571428571428573,
+      -5.714285714285714
+    ],
+    "loud_level": 82.07388274414578,
+    "settled_objective": 79.99385518361109,
+    "descent_dB": 2.0800275605346883,
+    "settled_lift_band": 0.01607011038640227,
+    "max_trajectory_deviation_deg": 0.000517752875809796
+  },
+  "monte_carlo": {
+    "n": 20,
+    "descent_mean": 2.043690933696422,
+    "descent_min": 1.9608143238504567,
+    "descent_max": 2.0999670298552786,
+    "band_mean": 0.01599175566697142,
+    "band_max": 0.02312497910894451,
+    "inside_band": 20
+  },
+  "faults": [
+    {
+      "kind": "non-finite lift measurement",
+      "flags": 18,
+      "flag_names": "RATE_SAT|NONFINITE",
+      "settled_s": 0.001516580581665039,
+      "bounded": true,
+      "u": [
+        11.934653282165527,
+        -3.989882230758667,
+        5.848951816558838
+      ]
+    },
+    {
+      "kind": "non-finite speed",
+      "flags": 18,
+      "flag_names": "RATE_SAT|NONFINITE",
+      "settled_s": 0.0015723705291748047,
+      "bounded": true,
+      "u": [
+        11.959625244140625,
+        -1.1725481748580933,
+        1.6082425117492676
+      ]
+    },
+    {
+      "kind": "operating point off the map",
+      "flags": 15,
+      "flag_names": "POS_SAT|RATE_SAT|SP_CLAMP|LOW_CONF",
+      "settled_s": 0.692505955696106,
+      "bounded": true,
+      "u": [
+        12.0,
+        10.0,
+        10.0
+      ]
+    },
+    {
+      "kind": "lift demand beyond authority",
+      "flags": 2,
+      "flag_names": "RATE_SAT",
+      "settled_s": 0.0017075538635253906,
+      "bounded": true,
+      "u": [
+        11.728025436401367,
+        -9.66211986541748,
+        0.18590787053108215
+      ]
+    },
+    {
+      "kind": "surface frozen at its limit",
+      "flags": 2,
+      "flag_names": "RATE_SAT",
+      "settled_s": 0.002118229866027832,
+      "bounded": true,
+      "u": [
+        4.353751182556152,
+        9.592867851257324,
+        3.02439022064209
+      ]
+    }
+  ],
+  "link_retries": 0,
+  "firmware": {
+    "CTRL_K1": 10.0,
+    "CTRL_K2": 40.0,
+    "CTRL_MU": 0.4,
+    "CTRL_GAMMA": 3.0,
+    "CTRL_DT": 0.01,
+    "recorded": "from pil/ctrl.h after the run; the driver on the board machine predated the provenance record and the two headers were compared byte for byte"
+  }
+}

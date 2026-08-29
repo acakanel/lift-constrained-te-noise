@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+matplotlib
+
+# optional, and each needed for one thing only
+# neuralfoil, aerosandbox  -- rebuild dataset.csv from scratch
+# pyvista                  -- re-post-process Reynolds-averaged solutions
+# pyserial                 -- drive the STM32 board
+# xgboost                  -- one row of the surrogate-family comparison

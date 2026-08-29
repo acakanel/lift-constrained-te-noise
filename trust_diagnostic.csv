@@ -1,0 +1,10 @@
+quantity,value,unit
+spread_at_lowest_U,0.0830,dB
+jacobian_error_at_lowest_U,0.166,percent
+spread_at_withheld_slice,4.5051,dB
+jacobian_error_at_withheld_slice,55.17,percent
+calibration_spread_inside,0.7929,dB
+calibration_error_inside,0.3052,dB
+calibration_spread_outside,3.7660,dB
+calibration_error_outside,4.8756,dB
+U_withheld,70.0,m/s

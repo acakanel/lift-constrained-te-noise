@@ -1,0 +1,14 @@
+{
+  "n": 375,
+  "d": 4,
+  "nu": 41,
+  "ncl": 81,
+  "table_du_mean": 1.7345076819295453,
+  "table_du_max": 22.558766792173582,
+  "table_dspl_mean": 0.0177916665544745,
+  "table_dspl_max": 1.2989653896211877,
+  "bytes_shared": 6032,
+  "bytes_cl": 1524,
+  "bytes_spl": 283524,
+  "bytes_table": 53624
+}

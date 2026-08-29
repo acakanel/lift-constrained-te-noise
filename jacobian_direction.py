@@ -104,7 +104,7 @@ def main(n, reuse=False):
             break
     V = {
         "jdN": str(n),
-        "jdAngles": f"{min(ANGLES):g}--{max(ANGLES):g}",
+        "jdAngles": f"{min(ANGLES):g}" + r"\text{--}" + f"{max(ANGLES):g}",
         "jdHeldTo": f"{max(held):g}" if held else "0",
         "jdMaxAtHeld": f"{float(t.settled_max[max(held)]):.3f}" if held else "--",
         "jdMaxAtWorst": f"{float(t.settled_max[max(ANGLES)]):.3f}",

@@ -94,11 +94,9 @@ def overall_spl(dstar_s, dstar_p, U, alpha_deg, chord, **kw):
 
 if __name__ == "__main__":
     import os, pandas as pd
-    cand=[os.path.expanduser("~/Documents/KLU/RESEARCH/ML_STA/../uploads/AirfoilSelfNoise.csv"),
-          "AirfoilSelfNoise.csv", os.path.join(os.path.dirname(__file__),"AirfoilSelfNoise.csv")]
-    path=next((c for c in cand if os.path.exists(c)), None)
-    if path is None:
-        print("Put AirfoilSelfNoise.csv next to this script to validate."); raise SystemExit
+    path=os.path.join(os.path.dirname(os.path.abspath(__file__)),"NASA_selfnoise.csv")
+    if not os.path.exists(path):
+        print(f"{path} is missing; it ships with this repository."); raise SystemExit
     df=pd.read_csv(path)
     corrs=[]; rmses=[]
     for _,g in df.groupby(["alpha","c","U_infinity","delta"]):

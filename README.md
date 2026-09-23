@@ -1,5 +1,7 @@
 # Lift-constrained trailing-edge noise control of a wing section
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22924822.svg)](https://doi.org/10.5281/zenodo.22924822)
+
 Code and data for the manuscript
 
 > **Lift-Constrained Trailing-Edge Noise Control of a Wing Section: Achievable
@@ -194,9 +196,14 @@ Please cite the paper:
 > achievable authority and the role of aeroacoustic model form, *Aerospace
 > Science and Technology* (2026), accepted.
 
-This repository is archived on Zenodo and has its own DOI, which is added here
-once the first release is minted. Cite the paper for the work and the archive
-only if you are citing the code or data specifically.
+This repository is archived on Zenodo. Cite the paper for the work; cite the
+archive only if you are citing the code or data specifically:
+
+> A. Çakanel, Lift-constrained trailing-edge noise control of a wing section:
+> code and data, Zenodo, https://doi.org/10.5281/zenodo.22924822
+
+That is the *concept* DOI: it always resolves to the newest release. Each
+release also has its own DOI if you need to pin an exact version.
 
 ## Licence
 

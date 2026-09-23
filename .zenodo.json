@@ -1,0 +1,26 @@
+{
+  "upload_type": "software",
+  "title": "Lift-constrained trailing-edge noise control of a wing section: code and data",
+  "description": "<p>Code and data for the paper <em>Lift-Constrained Trailing-Edge Noise Control of a Wing Section: Achievable Authority and the Role of Aeroacoustic Model Form</em>, Aerospace Science and Technology (accepted, 2026).</p><p>Every number, figure and table in the paper is produced by something in this archive, from the data also in it. The study asks how much trailing-edge self-noise a two-segment wing section can shed while holding the lift the flight condition demands, and answers it in resolved flow rather than through a semi-empirical chain. The answer is negative: the authority is absent at both lift conditions examined. A constraint-control framework that holds lift to a prescribed band under unknown bounded disturbances is reported alongside it, and is independent of that result.</p><p>Contents: the Brooks-Pope-Marcolini self-noise model in reduced and complete form, the Gaussian-process aerodynamic surrogate and its training set, two-dimensional steady k-omega SST solutions with a three-level grid-convergence study, four constraint control laws with a 2000-trial Monte-Carlo campaign, and a processor-in-the-loop package for an STM32F767ZI.</p>",
+  "creators": [
+    {
+      "name": "Çakanel, Ahmet",
+      "affiliation": "Kırklareli University, Kırklareli, Türkiye",
+      "orcid": "0000-0003-2988-325X"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "keywords": [
+    "trailing-edge noise",
+    "airframe noise",
+    "aeroacoustics",
+    "aeroacoustic model form",
+    "Brooks-Pope-Marcolini",
+    "Gaussian-process surrogate",
+    "constraint-guaranteed control",
+    "super-twisting sliding mode",
+    "RANS",
+    "processor-in-the-loop"
+  ]
+}
